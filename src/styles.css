@@ -1,0 +1,115 @@
+body * {
+    transition: box-shadow 0.500s ease-in-out;
+}
+
+body{
+    background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #111;
+    font-family: Rubik;
+   
+}
+
+
+header, main {
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+}
+
+nav ul:last-of-type {
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+
+}
+
+nav ul li a {
+    color: #111;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav ul:first-of-type li:first-of-type a {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #111;
+    box-shadow: none;
+}
+form {
+    background: rgb(253, 237, 237);
+    padding: 10px;
+    width: 30%;
+    margin:0 auto;
+    text-align: left;
+    -webkit-box-shadow: 0px 10px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 20px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+form * , button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+form input{
+    border:none;
+    margin-bottom: 10px;
+}
+
+form input{
+    background: none;
+    border-bottom: 1px solid #777;
+    color: #ff5e62;
+    font-size: 1rem;
+}
+
+form input[type="submit"], button{
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    border:none;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #eee;
+    border-radius:5px;
+    -webkit-box-shadow: 0px 10px 20px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 20px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 20px -12px rgba(0,0,0,0.75);
+}
+
+form img {
+    width: 50%;
+    margin: 0 auto;
+}
+form input[type="submit"]:disabled {
+    background: none;
+    color: #777;
+    border: 1px solid #777;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+.img {
+    width: 40%;
+}

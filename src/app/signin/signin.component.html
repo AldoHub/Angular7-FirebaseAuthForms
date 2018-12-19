@@ -1,0 +1,19 @@
+
+  <p>SignIn with Email and Password.</p>
+  <form (ngSubmit)="signin(signinForm.value)" [formGroup]="signinForm">
+      <img src="../../assets/fire.svg" />
+    <label for="email">Email:</label>
+    <input type="email" name="email" formControlName="email">
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" formControlName="password">
+  
+    <input type="submit" [disabled]="!signinForm.valid" value="Submit">
+  </form> 
+
+  
+  <div *ngIf="authService.error != ''">
+    <p>{{authService.error}}</p>  
+  </div>
+
+

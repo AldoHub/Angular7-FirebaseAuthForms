@@ -1,0 +1,25 @@
+
+<nav>
+  <ul>
+    <li><a routerLink="/">NgFirebaseAuth</a></li>
+    <li><a routerLink="/">Email</a></li>
+    <li><a routerLink="provider">Provider</a></li>
+    <li><a routerLink="passwordless">Passwordless</a></li>
+  </ul>
+  <ul>
+    <li *ngIf="authService.user | async as user; else showSignIn"><button (click)="logout()">Log Out</button></li>
+  </ul>
+</nav>
+
+
+<ng-template #showSignIn>
+    <li><a routerLink="signin">Signin</a></li>
+</ng-template>
+
+
+<header>
+  <h1>Firebase Auth</h1>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

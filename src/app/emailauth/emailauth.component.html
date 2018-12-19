@@ -1,0 +1,17 @@
+<p>Create An Account (email & password)</p>
+<form (ngSubmit)="login(loginForm.value)" [formGroup]="loginForm">
+  <img src="../../assets/fire.svg" />
+  
+  <label for="email">Email:</label>
+  <input type="email" name="email" formControlName="email">
+
+  <label for="password">Password:</label>
+  <input type="password" name="password" formControlName="password">
+
+  <input type="submit" [disabled]="!loginForm.valid" value="Submit">
+</form> 
+
+<div *ngIf="authService.error != ''">
+    <p>{{authService.error}}</p>
+</div>
+

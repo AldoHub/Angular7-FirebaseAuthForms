@@ -1,0 +1,8 @@
+
+<img class="img" src="../../assets/undraw_having_fun_iais.svg" />
+
+
+<div *ngIf="authService.user | async as user">
+  <h1>Welcome to the private room {{ user }}!</h1>
+
+</div>
